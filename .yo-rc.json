@@ -1,0 +1,34 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "org.aspire.myapp"
+        },
+        "jhipsterVersion": "5.8.2",
+        "applicationType": "monolith",
+        "baseName": "NewApp",
+        "packageName": "org.aspire.myapp",
+        "packageFolder": "org/aspire/myapp",
+        "serverPort": "8080",
+        "authenticationType": "session",
+        "cacheProvider": "no",
+        "websocket": false,
+        "databaseType": "sql",
+        "devDatabaseType": "mysql",
+        "prodDatabaseType": "mysql",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": true,
+        "rememberMeKey": "cb75c385e65bfb32d580eb4afcfe0df5880f67b95f40cd042fc6f74be663d88d38380be8ec1845ba66a17618725818360685",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": ["gatling"],
+        "jhiPrefix": "jhi",
+        "entitySuffix": "",
+        "dtoSuffix": "DTO",
+        "otherModules": [],
+        "enableTranslation": false
+    }
+}
