@@ -9,6 +9,10 @@ node {
             sh "java -version"
         }
 
+        stage('check node') {
+            sh "node --version"
+        }
+
         stage('clean') {
             sh "chmod +x mvnw"
             sh "./mvnw clean"
@@ -46,10 +50,10 @@ node {
             sh "./mvnw verify -Pprod -DskipTests"
             archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
         }
-        stage('quality analysis') {
-            withSonarQubeEnv('sonar') {
-                sh "./mvnw sonar:sonar"
-            }
-        }
+        // stage('quality analysis') {
+        //     withSonarQubeEnv('sonar') {
+        //         sh "./mvnw sonar:sonar"
+        //     }
+        // }
     }
 }
